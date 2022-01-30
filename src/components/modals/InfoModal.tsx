@@ -22,6 +22,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="N" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
+        The letter M is in the word in the right spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">

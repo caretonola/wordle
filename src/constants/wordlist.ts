@@ -41,6 +41,7 @@ export const WORDS = [
   'rabak',
   'relak',
   'rojak',
+  'salah',
   'salat',
   'satay',
   'sedap',
