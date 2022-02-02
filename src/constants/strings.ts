@@ -1,9 +1,9 @@
-export const WORDLE_TITLE = 'Singlish Wordle'
+export const WORDLE_TITLE = 'Word-leh!'
 export const WIN_MESSAGES = ['Wah Congrats!', 'Eh, Not Bad!', 'Steady Sia!']
 export const GAME_COPIED_MESSAGE = 'Game copied to clipboard'
 export const ABOUT_GAME_MESSAGE = 'About this game'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'Not enough letters leh'
-export const WORD_NOT_FOUND_MESSAGE = 'Word not found leh'
+export const WORD_NOT_FOUND_MESSAGE = 'Word not found leh. Must be English or Singlish'
 export const CORRECT_WORD_MESSAGE = (solution: string) =>
   `You know Singlish or not? The word was ${solution}`
 export const ENTER_TEXT = 'Enter'
