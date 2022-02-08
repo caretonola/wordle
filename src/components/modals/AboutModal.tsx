@@ -35,7 +35,15 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
         <a 
           href="https://icons8.com"
           className="underline font-bold">Icons8.
-        </a>
+        </a>{' '}<br></br>
+        Sha-Mayn (<a 
+          href="https://www.instagram.com/shamayn/"
+          className="underline font-bold">instagram
+        </a>/
+        <a 
+          href="https://twitter.com/shamayn"
+          className="underline font-bold">twitter
+        </a>) ownself make one. With love.
       </p>
 
     </BaseModal>
