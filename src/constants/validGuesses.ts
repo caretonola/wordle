@@ -805,6 +805,7 @@ export const VALIDGUESSES = [
   'bents',
   'benty',
   'bepat',
+  'berak',
   'beray',
   'beres',
   'bergs',
@@ -5092,6 +5093,7 @@ export const VALIDGUESSES = [
   'leirs',
   'leish',
   'leman',
+  'lemak',
   'lemed',
   'lemel',
   'lemes',
@@ -12972,4 +12974,5 @@ export const VALIDGUESSES = [
   'artsy',
   'rural',
   'shave',
+  'satay',
 ]
