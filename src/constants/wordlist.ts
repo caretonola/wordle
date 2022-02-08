@@ -21,6 +21,7 @@ export const WORDS = [
   'sibeh',
   'tuang',
   'manja',
+  'whack',
   'habis',
   'suaku',
   'shack',
