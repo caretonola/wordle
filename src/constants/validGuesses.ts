@@ -4415,6 +4415,7 @@ export const VALIDGUESSES = [
   'jaker',
   'jakes',
   'jakey',
+  'jalan',
   'jalap',
   'jalop',
   'jambe',
