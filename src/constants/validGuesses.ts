@@ -13013,4 +13013,7 @@ export const VALIDGUESSES = [
   'angmo',
   'bagus',
   'gelak',
+  'butoh',
+  'tikam',
+  'aiseh',
 ]
