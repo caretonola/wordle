@@ -15311,8 +15311,6 @@ export const VALID_GUESSES = [
   'upsai',
   'saman',
   'ketuk',
-  'koyok',
-  'bedek',
   'choot',
   'cucuk',
   'datuk',
@@ -15329,6 +15327,7 @@ export const VALID_GUESSES = [
   'bagus',
   'gelak',
   'butoh',
-  'tikam',
-  'aiseh',
+  'kacau',
+  'kenah',
+  'gelek',
 ]

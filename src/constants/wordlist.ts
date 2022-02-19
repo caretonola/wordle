@@ -52,7 +52,11 @@ export const WORDS = [
   'drama',
   'rojak',
   'tahan',
-  'kenah',
   'gabra',
   'makan',
+  'hanor',
+  'tikam',
+  'aiseh',
+  'koyok',
+  'bedek',
  ]
