@@ -1,6 +1,7 @@
 import { WORDS } from '../constants/wordlist'
 import { VALID_GUESSES } from '../constants/validGuesses'
-import { WRONG_SPOT_MESSAGE, NOT_CONTAINED_MESSAGE } from '../constants/strings'
+import { WORD_DEFINITIONS } from '../constants/wordDefinitions'
+import { WRONG_SPOT_MESSAGE, NOT_CONTAINED_MESSAGE, DEFAULT_DEFINITION_TEXT } from '../constants/strings'
 import { getGuessStatuses } from './statuses'
 
 export const isWordInWordList = (word: string) => {
@@ -58,12 +59,17 @@ export const getWordOfDay = () => {
   const msInDay = 86400000
   const index = Math.floor((now - epochMs) / msInDay)
   const nextday = (index + 1) * msInDay + epochMs
+  const word = WORDS[index % WORDS.length].toUpperCase()
+  const definition = WORD_DEFINITIONS.has(word) ?
+    WORD_DEFINITIONS.get(word) : DEFAULT_DEFINITION_TEXT;
 
   return {
-    solution: WORDS[index % WORDS.length].toUpperCase(),
+    solution: word,
     solutionIndex: index,
     tomorrow: nextday,
+    solutionDefinition: definition,
   }
 }
 
-export const { solution, solutionIndex, tomorrow } = getWordOfDay()
+export const { solution, solutionIndex, tomorrow, solutionDefinition } = getWordOfDay()
+

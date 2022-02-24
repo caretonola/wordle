@@ -30,6 +30,7 @@ import {
   isWinningWord,
   solution,
   findFirstUnusedReveal,
+  solutionDefinition,
 } from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
@@ -282,6 +283,7 @@ function App() {
         isGameWon={isGameWon}
         handleShare={() => showSuccessAlert(GAME_COPIED_MESSAGE)}
         isHardMode={isHardMode}
+        wordDefinition={solutionDefinition!}
       />
       <SettingsModal
         isOpen={isSettingsModalOpen}

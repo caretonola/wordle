@@ -59,4 +59,5 @@ export const WORDS = [
   'aiseh',
   'koyok',
   'bedek',
+  'kiasi',
  ]

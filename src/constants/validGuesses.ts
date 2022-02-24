@@ -15330,4 +15330,6 @@ export const VALID_GUESSES = [
   'kacau',
   'kenah',
   'gelek',
+  'malay',
+  'issit',
 ]

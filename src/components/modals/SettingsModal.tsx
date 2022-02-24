@@ -23,7 +23,7 @@ export const SettingsModal = ({
   handleHighContrastMode,
 }: Props) => {
   return (
-    <BaseModal title="Settings" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="SETTINGS" isOpen={isOpen} handleClose={handleClose}>
       <div className="grid-cols-2 gap-4">
         <SettingsToggle
           settingName="Cheem Mode"
