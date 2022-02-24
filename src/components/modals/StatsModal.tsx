@@ -59,7 +59,7 @@ export const StatsModal = ({
       <Histogram gameStats={gameStats} />
       {(isGameLost || isGameWon) && (
         <div>
-          <h5 className="text-med italic font-medium text-gray-900 dark:text-gray-100">"{wordDefinition}"</h5>
+          <h5 className="text-lg italic font-medium text-gray-900 dark:text-gray-100">"{wordDefinition}"</h5>
           <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
             <div>
               <div className="text-sm text-gray-900 dark:text-gray-100">{NEW_WORD_TEXT}</div>
