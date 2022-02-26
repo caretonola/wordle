@@ -9,6 +9,7 @@ export const WORD_DEFINITIONS = new Map([
 	['DONCH', 'DONCH worry. Tomolo can play again!'],
 	['SIONG', 'Todeh game very hard. SIONG ah!'],
 	['TERUK', 'Todeh game oso hard. TERUK!'],
-	['BODOH', 'You not BODOH lah. You very clever!'],
-	['CABUT', 'Still working? Mai tu liao! Faster CABUT go home play WORD-LEH!']
+	['BODOH', 'You not BODOH lah. You vsery clever!'],
+	['CABUT', 'Still working? Mai tu liao! Faster CABUT go home play WORD-LEH!'],
+	['HABIS', 'Guess 6 times oredi still dunno the WORD-LEH? HABIS lah!'],
 ])
