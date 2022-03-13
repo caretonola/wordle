@@ -60,4 +60,9 @@ export const WORDS = [
   'koyok',
   'bedek',
   'kiasi',
+  'prata',
+  'pakat',
+  'gelek',
+  'geena',
+  'sakar',
  ]
