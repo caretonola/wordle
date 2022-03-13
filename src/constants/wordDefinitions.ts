@@ -14,7 +14,7 @@ export const WORD_DEFINITIONS = new Map([
 	['HABIS', 'Guess 6 times oredi still dunno the WORD-LEH? HABIS lah!'],
 	['HOSEH', 'How are you? HOSEH bo?'],
 	['MAFAN', 'English grammar so mafan, just spiak Singlish easier!'],
-	['SALAH', 'Cannot guess today's WORD-LEH, so SALAH!'],
+	['SALAH', 'Cannot guess today\'s WORD-LEH, so SALAH!'],
 	['JELAK', 'Ate too much pizza, so JELAK!'],
 	['NGEOW', 'Dun be NGEOW about the spelling. Could be ngiao too! '],
 	['TEKAN', 'Dun TEKAN me if WORD-LEH! got no more 5 letter words liao'],
