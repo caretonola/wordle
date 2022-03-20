@@ -21,6 +21,7 @@ export const Keyboard = ({
   const charStatuses = getStatuses(guesses)
 
   const onClick = (value: string) => {
+    console.log(value)
     if (value === 'ENTER') {
       onEnter()
     } else if (value === 'DELETE') {
@@ -38,7 +39,42 @@ export const Keyboard = ({
         onDelete()
       } else {
         const key = e.key.toUpperCase()
-        if (key.length === 1 && key >= 'A' && key <= 'Z') {
+        let alphabet = [
+          'Q',
+          'W',
+          'E',
+          'R',
+          'T',
+          'Y',
+          'U',
+          'I',
+          'O',
+          'P',
+          'Ğ',
+          'Ü',
+          'A',
+          'S',
+          'D',
+          'F',
+          'G',
+          'H',
+          'J',
+          'K',
+          'L',
+          'Ş',
+          'İ',
+          'Z',
+          'X',
+          'C',
+          'V',
+          'B',
+          'N',
+          'M',
+          'Ö',
+          'Ç',
+        ]
+        if (key.length === 1 && alphabet.indexOf(key) > -1) {
+          console.log(key)
           onChar(key)
         }
       }
@@ -52,18 +88,20 @@ export const Keyboard = ({
   return (
     <div>
       <div className="flex justify-center mb-1">
-        {['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'].map((key) => (
-          <Key
-            value={key}
-            key={key}
-            onClick={onClick}
-            status={charStatuses[key]}
-            isRevealing={isRevealing}
-          />
-        ))}
+        {['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'Ğ', 'Ü'].map(
+          (key) => (
+            <Key
+              value={key}
+              key={key}
+              onClick={onClick}
+              status={charStatuses[key]}
+              isRevealing={isRevealing}
+            />
+          )
+        )}
       </div>
       <div className="flex justify-center mb-1">
-        {['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'].map((key) => (
+        {['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Ş', 'İ'].map((key) => (
           <Key
             value={key}
             key={key}
@@ -77,7 +115,7 @@ export const Keyboard = ({
         <Key width={65.4} value="ENTER" onClick={onClick}>
           {ENTER_TEXT}
         </Key>
-        {['Z', 'X', 'C', 'V', 'B', 'N', 'M'].map((key) => (
+        {['Z', 'X', 'C', 'V', 'B', 'N', 'M', 'Ö', 'Ç'].map((key) => (
           <Key
             value={key}
             key={key}

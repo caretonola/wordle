@@ -211,7 +211,7 @@ function App() {
     setTimeout(() => {
       setIsRevealing(false)
     }, REVEAL_TIME_MS * MAX_WORD_LENGTH)
-
+    console.log('guess:', currentGuess)
     const winningWord = isWinningWord(currentGuess)
 
     if (

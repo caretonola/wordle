@@ -8,68 +8,72 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="HOW TO PLAY" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="NASIL OYNANIR?" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the WORD-LEH! in 6 tries. After each guess, the color of the tiles
-        will change to show how close your guess was to the word.
-
-        English words are accepted as guesses, but the answer will always be in Singlish!
+        HANDLE'ı tahmin et! 6 hakkın var. Her tahminden sonra, harflerin rengi
+        tahmininin kelimeye ne kadar yakın olduğuna göre renk değiştrecek.
+        Türkçe kelimeler tahmin olarak kabul edilecek ancak cevap her zaman
+        Hande Erçel'le ilgili bir kelime olacak!
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="C"
+          value="K"
           status="correct"
         />
-        <Cell value="H" />
-        <Cell value="E" />
+        <Cell value="A" />
+        <Cell value="L" />
         <Cell value="E" />
         <Cell value="M" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter C is in the word in the right spot.
+        K harfinin yeri cevapta da aynı yerde.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="B" />
-        <Cell value="O" />
+        <Cell value="Ş" />
+        <Cell value="E" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="J"
+          value="R"
           status="present"
         />
-        <Cell value="I" />
-        <Cell value="O" />
+        <Cell value="İ" />
+        <Cell value="T" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter J is in the word but in the wrong spot.
+        R harfi cevapta var ancak şu an yanlış yerde.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
+        <Cell value="T" />
+        <Cell value="A" />
+        <Cell value="K" />
         <Cell value="S" />
-        <Cell value="A" />
-        <Cell value="L" />
-        <Cell value="A" />
-        <Cell isRevealing={true} isCompleted={true} value="H" status="absent" />
+        <Cell isRevealing={true} isCompleted={true} value="İ" status="absent" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter H is not in the word in any spot.
-      </p><br></br>
+        İ harfi cevabın herhangi bir yerinde yok.
+      </p>
+      <br></br>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Every deh got new WORD-LEH!
+        Her gün yeni bir HANDLE kelimesi bul!
       </p>
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        <a 
-          href="https://twitter.com/shamayn"
-          className="underline font-bold">@shamayn
-        </a> ownself make one. Inspired by{' '}        
-        <a 
+        <a href="https://twitter.com/shamayn" className="underline font-bold">
+          @shamayn
+        </a>{' '}
+        ownself make one. Inspired by{' '}
+        <a
           href="https://www.nytimes.com/games/wordle/index.html"
-          className="underline font-bold">Wordle
-        </a>.
+          className="underline font-bold"
+        >
+          Wordle
+        </a>
+        .
       </p>
     </BaseModal>
   )

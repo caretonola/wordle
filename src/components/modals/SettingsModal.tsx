@@ -23,20 +23,20 @@ export const SettingsModal = ({
   handleHighContrastMode,
 }: Props) => {
   return (
-    <BaseModal title="SETTINGS" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="AYARLAR" isOpen={isOpen} handleClose={handleClose}>
       <div className="grid-cols-2 gap-4">
         <SettingsToggle
-          settingName="Cheem Mode"
+          settingName="Canlı Mod"
           flag={isHardMode}
           handleFlag={handleHardMode}
         />
         <SettingsToggle
-          settingName="Dark Mode"
+          settingName="Karanlık Mod"
           flag={isDarkMode}
           handleFlag={handleDarkMode}
         />
         <SettingsToggle
-          settingName="High Contrast Mode"
+          settingName="Yüksek Kontrast Modu"
           flag={isHighContrastMode}
           handleFlag={handleHighContrastMode}
         />
